@@ -1,0 +1,52 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/imooc-demo?useUnicode=yes&characterEncoding=UTF-8&useSSL=false
+    #  username  登录数据库的用户
+    username: root
+    password: 123456
+    #  data-username: 执行DML脚本（如果不同）的数据库用户
+  session:
+    store-type: REDIS
+server:
+  session:
+    timeout: 600
+  port: 8060
+#先关闭身份验证
+#security:
+#  basic:
+#    enabled: false
+
+security:
+  oauth2:
+    client:
+     clientId: imooc
+     clientSecret: imoocsecret
+
+imooc:
+  security:
+    social:
+      qq:
+        app-id:
+        app-secret:
+        providerId: callback.do
+      filterProcessesUrl: /qq/login
+
+    browser:
+      #      loginPage: /demo-signIn.html
+      #      loginType: REDIRECT
+      signUpUrl: /demo-signUp.html
+      loginType: JSON
+      signOutUrl: /demo-signOut.html
+    code:
+      image:
+        length: 4
+        width: 67
+        url: /user,/user/*
+      mobile:
+        url: /mobile,/mobile/*
+
+#logging:
+#  level:
+#    root: debug
+#debug: true

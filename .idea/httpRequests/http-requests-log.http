@@ -1,0 +1,16 @@
+GET http://localhost:8060/authentication/require
+
+<> 2018-10-31T050832.401.json
+
+###
+
+GET http://localhost:8060/authentication/require
+
+<> 2018-10-31T050823.401.json
+
+###
+
+GET http://localhost:8060/code/{type}
+
+###
+

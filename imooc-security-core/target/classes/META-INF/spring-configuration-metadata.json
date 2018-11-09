@@ -1,0 +1,28 @@
+{
+  "hints": [],
+  "groups": [
+    {
+      "sourceType": "com.imooc.security.core.properties.SecurityProperties",
+      "name": "imooc.security",
+      "type": "com.imooc.security.core.properties.SecurityProperties"
+    }
+  ],
+  "properties": [
+    {
+      "sourceType": "com.imooc.security.core.properties.SecurityProperties",
+      "name": "imooc.security.browser",
+      "type": "com.imooc.security.core.properties.BrowserProperties"
+    },
+    {
+      "sourceType": "com.imooc.security.core.properties.SecurityProperties",
+      "name": "imooc.security.code",
+      "type": "com.imooc.security.core.properties.ValidateCodeProperties"
+    },
+    {
+      "sourceType": "com.imooc.security.core.properties.SecurityProperties",
+      "name": "imooc.security.social",
+      "description": "注入自己的socialProperties,配置里面的QQ\/微信等等实现",
+      "type": "com.imooc.security.core.properties.SocialProperties"
+    }
+  ]
+}
